@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'MagicalRecord'
-  s.version  = '2.3.0'
+  s.version  = '2.3.0c1'
   s.license  = 'MIT'
   s.summary  = 'Super Awesome Easy Fetching for Core Data 1!!!11!!!!1!.'
   s.homepage = 'http://github.com/magicalpanda/MagicalRecord'
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.1'
   s.osx.deployment_target = '10.8'
 
-  s.framework    = 'CoreData'
+  s.framework    = 'CoreData', 'Cocoalumberjack'
   s.header_dir   = 'MagicalRecord'
   s.source_files = 'MagicalRecord/**/*.{h,m}'
   s.prefix_header_contents = <<-EOS
